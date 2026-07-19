@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!-- Desafio 3 - Crie um formulário onde o usuário possa avaliar um produto utilizando um controle range e exiba a nota escolhida utilizando um output. -->
+    <h1>Exercícios de Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iava">Avalie o produto: </label>
+            <input type="range" name="ava" id="iava" min="0" max="10" required value="5" oninput="iput.innerHTML= Number(iava.value)">
+            <output id="iput">5</output>
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

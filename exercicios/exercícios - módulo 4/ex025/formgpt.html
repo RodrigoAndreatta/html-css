@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!-- Desafio 1 - Crie um formulário de login contendo: Email-senha-botão entrar -->
+    <h1>Exercícios de Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Login</legend>
+        <p>
+            <label for="iemail">Seu E-mail:</label>
+            <input type="email" name="email" id="iemail" placeholder="exemplo@exemplo.com" autocomplete="email" required>
+        </p>
+        <p>
+            <label for="isenha">Sua senha: </label>
+            <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required autocomplete="current-password" minlength="5" maxlength="20">
+        </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
